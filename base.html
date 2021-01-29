@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% if title %}
-    <title>{{ title }} | yusufRahmatullah </title>
-    {% else %}
+    
     <title>yusufRahmatullah</title>
-    {% endif %}
+    
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,16 +14,14 @@
     <link rel="stylesheet" href="/static/css/common.css">
   </head>
 
-  {% if onload_function %}
-  <body onload="{{ onload_function }}">
-  {% else %}
+  
   <body>
-  {% endif %}
+  
     <div class="container">
 
       <nav>
         <div class="nav-wrapper">
-          <span id="selected-menu" class="brand-logo">{{ title }}</span>
+          <span id="selected-menu" class="brand-logo"></span>
           <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/">Home</a></li>
             <li><a href="/budgets">Budgets</a></li>
@@ -36,16 +32,16 @@
         </div>
       </nav>   
     
-      {% block content %}
-      {% endblock %}
+      
+      
     </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script type="text/javascript" src="/static/js/common.js"></script>
-    {% block page_script %}
-    {% endblock %}
+    
+    
   </body>
 
 </html>
