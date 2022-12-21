@@ -23,6 +23,12 @@ def code_snippet():
   print("Hello, Jekyll")
 ```
 
+And also, I can embed gist code here
+
+{% gist a219a7dca80f12434d1b %}
+
+{% gist 5555251 gist.md %}
+
 Want to know about Jekyll, check this out 👇
 
 [jekyll-docs](https://jekyllrb.com/docs/home)
